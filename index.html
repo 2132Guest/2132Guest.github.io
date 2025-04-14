@@ -1,20 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Enthusiast | Home</title>
+    <title>Dream Garage | Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f5f5f0;
+            color: #333;
+            line-height: 1.8;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        nav a.active {
+            background: #d35400;
+            border-radius: 3px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .car-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 25px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .ferrari-border {
+            border: 3px solid #e32124;
+        }
+        .maybach-border {
+            border: 3px solid #111111;
+        }
+        h1 {
+            color: #d35400;
+            text-align: center;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <a class="active" href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
+        <a href="gallery.html">My Collection</a>
+        <a href="about.html">My Story</a>
     </nav>
 
     <div class="content">
-        <h1>Welcome to Car Enthusiast!</h1>
-        <p>Discover amazing cars from classics to modern supercars.</p>
-        <img src="https://images.unsplash.com/photo-1494976388901-750342ad5036" alt="Sports car" width="400">
+        <h1>Welcome to My Dream Garage</h1>
+        
+        <p>Hey there! I'm Suhaib Ahmad, an 11th grade student currently taking PDD (Product Design & Development) while pursuing my passion for automotive excellence. What started as childhood fascination with toy cars has evolved into a deep appreciation for automotive engineering and design. Whether it's the raw power of a Ferrari V12 or the exquisite craftsmanship of a Maybach interior, I find beauty in how machines can blend art and technology. This website is where I share my automotive journey - from dream cars to technical deep dives.</p>
+        
+        <img src="https://cdn.motor1.com/images/mgl/XB6Jj9/s3/ferrari-f80.jpg" 
+             alt="Ferrari F80 Concept" 
+             class="car-image ferrari-border">
+        <p class="caption"><em>Ferrari F80 Concept - A glimpse into the future of hypercars</em></p>
+        
+        <img src="https://autovista24.autovistagroup.com/wp-content/uploads/sites/5/2022/05/d662614-1024x640.jpg" 
+             alt="Mercedes-Maybach" 
+             class="car-image maybach-border">
+        <p class="caption"><em>Mercedes-Maybach - The pinnacle of automotive luxury</em></p>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="gallery.html" style="background: #d35400; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Explore My Dream Collection</a>
+        </div>
     </div>
 </body>
 </html>
