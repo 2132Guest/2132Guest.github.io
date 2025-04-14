@@ -5,32 +5,35 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #f5f5f0; /* Fossil color background */
+            background-color: #f5f5f0; /* Fossil background */
             color: #333;
             line-height: 1.8;
         }
         .article-container {
             max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 30px;
             background: white;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
         .car-image {
             width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            display: block;
-            border-radius: 5px;
+            max-width: 500px;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .float-left {
             float: left;
-            margin: 0 20px 20px 0;
+            margin: 0 25px 15px 0;
+            width: 50%;
         }
         .float-right {
             float: right;
-            margin: 0 0 20px 20px;
+            margin: 0 0 15px 25px;
+            width: 50%;
         }
         .clear {
             clear: both;
@@ -43,6 +46,21 @@
         }
         h2 {
             color: #e67e22;
+            margin-top: 40px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #e67e22;
         }
     </style>
 </head>
@@ -56,7 +74,9 @@
     <div class="article-container">
         <h1>Suhaib Ahmad: A True Car Enthusiast</h1>
         
-        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Classic Car" class="float-left" style="width:300px">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39" 
+             alt="Classic Car Collection" 
+             class="car-image">
         
         <p>Suhaib Ahmad's love for cars is more than just a hobby; it's a deep passion that drives his everyday life. From a young age, Suhaib was drawn to high-performance vehicles, fascinated by the precision and design of luxury brands.</p>
         
@@ -64,42 +84,55 @@
         
         <h2>German Engineering Passion</h2>
         
-        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="BMW M5" class="float-right" style="width:300px">
+        <div class="float-left">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" 
+                 alt="BMW M5" 
+                 class="car-image">
+            <p><strong>BMW M5:</strong> The perfect balance of luxury and performance, with a 4.4L V8 producing 600+ horsepower.</p>
+        </div>
         
-        <p>Among his favorites are BMWs, known for their perfect blend of power and elegance. The BMW M5 holds a special place in his heart with its combination of luxury sedan practicality and supercar performance.</p>
+        <div class="float-right">
+            <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e" 
+                 alt="Mercedes-AMG GT" 
+                 class="car-image">
+            <p><strong>Mercedes-AMG GT:</strong> Handcrafted 4.0L V8 biturbo engine with signature AMG exhaust roar.</p>
+        </div>
         
-        <p>He equally admires Mercedes-Benz for its luxury and cutting-edge technology. The iconic G-Wagon represents to him the pinnacle of rugged luxury, capable of both city cruising and off-road adventures.</p>
+        <div class="clear"></div>
+        
+        <p>He equally admires Mercedes-Benz for its luxury and cutting-edge technology. The <strong>GLS 600</strong> represents the pinnacle of full-size luxury SUVs, while the <strong>G63 AMG</strong> combines brutal off-road capability with lavish interiors.</p>
+        
+        <img src="https://images.unsplash.com/photo-1638613067237-b1127ef06c00" 
+             alt="Mercedes GLS" 
+             class="car-image"
+             style="max-width: 700px;">
         
         <div class="clear"></div>
         
         <h2>Italian Thrills</h2>
         
-        <img src="https://images.unsplash.com/photo-1494976388901-750342ad5036" alt="Ferrari" class="float-left" style="width:300px">
+        <img src="https://images.unsplash.com/photo-1638346541640-5b77c937b3a7" 
+             alt="Ferrari SF90 Stradale" 
+             class="car-image"
+             style="border: 3px solid #e32124;">
         
-        <p>Suhaib is captivated by the thrill of driving sports cars, especially Ferraris. He admires the raw power and engineering brilliance behind models like the 812 Superfast, considering them not just cars but experiences.</p>
+        <p>Suhaib is captivated by the thrill of driving sports cars, especially Ferraris. The <strong>SF90 Stradale</strong> (shown above) blends hybrid technology with 986hp of raw power, while the <strong>812 Superfast</strong> delivers a naturally aspirated 6.5L V12 masterpiece.</p>
         
-        <p>"There's nothing like the scream of a Ferrari V12 at full throttle," Suhaib often says. "It's mechanical poetry in motion."</p>
-        
-        <div class="clear"></div>
-        
-        <h2>The Dream Collection</h2>
-        
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Luxury Cars" class="float-right" style="width:300px">
-        
-        <p>His dream garage would include:</p>
         <ul>
-            <li>BMW M5 CS (for daily driving perfection)</li>
-            <li>Mercedes-AMG G63 (for luxury off-roading)</li>
-            <li>Ferrari 812 Superfast (for weekend thrills)</li>
-            <li>Porsche 911 GT3 RS (for track days)</li>
+            <li><strong>Ferrari Roma:</strong> Timeless grand touring elegance</li>
+            <li><strong>F8 Tributo:</strong> Mid-engine turbocharged fury</li>
+            <li><strong>Portofino M:</strong> Open-top cruising perfection</li>
         </ul>
         
-        <div class="clear"></div>
+        <div class="quote">
+            "The first time I heard a Ferrari V12 at full throttle, I knew cars would be my lifelong passion.<br>
+            There's nothing like that mechanical symphony."<br>
+            — Suhaib Ahmad
+        </div>
         
-        <p style="text-align: center; font-style: italic; margin-top: 30px;">
-            "Cars are rolling art to me - each model tells a story of engineering passion and human achievement."<br>
-            - Suhaib Ahmad
-        </p>
+        <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927" 
+             alt="Porsche 911 GT3" 
+             class="car-image">
     </div>
 </body>
 </html>
