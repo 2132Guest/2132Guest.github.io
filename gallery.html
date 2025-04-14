@@ -1,8 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Enthusiast | Gallery</title>
+    <title>Gallery | Car Enthusiast</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f5f5f0;
+            color: #333;
+            line-height: 1.8;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        nav a.active {
+            background: #d35400;
+            border-radius: 3px;
+        }
+        .gallery-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .car-card {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .car-image {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .gls-border {
+            border: 3px solid #000080; /* Navy blue for GLS63 */
+        }
+        .huracan-border {
+            border: 3px solid #800080; /* Purple for Huracan */
+        }
+        .bugatti-border {
+            border: 3px solid #000000; /* Black for Bugatti */
+        }
+        h1 {
+            color: #d35400;
+            text-align: center;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #e67e22;
+            margin-top: 40px;
+        }
+        .car-specs {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #e67e22;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -11,15 +85,46 @@
         <a href="about.html">About</a>
     </nav>
 
-    <div class="content">
-        <h1>Car Gallery</h1>
-        <div class="car">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Luxury car" width="300">
-            <p>Luxury Sedan</p>
+    <div class="gallery-container">
+        <h1>Premium Automotive Gallery</h1>
+        
+        <!-- Mercedes-AMG GLS63 -->
+        <div class="car-card">
+            <h2>Mercedes-AMG GLS63</h2>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2023-mercedes-amg-gls63-exterior-101-673226ad7a7a2.jpg" 
+                 alt="Mercedes-AMG GLS63" 
+                 class="car-image gls-border">
+            <div class="car-specs">
+                <p><strong>Performance:</strong> 4.0L V8 Biturbo (603hp) | 0-60mph in 4.1s</p>
+                <p><strong>Unique Fact:</strong> The GLS63's E-Active Body Control can literally rock the car to free it from sand or snow.</p>
+                <p><strong>Luxury Feature:</strong> Optional first-class rear seats with massaging and champagne cooler.</p>
+            </div>
         </div>
-        <div class="car">
-            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Classic car" width="300">
-            <p>Classic Muscle</p>
+        
+        <!-- Lamborghini Huracan Twin-Turbo -->
+        <div class="car-card">
+            <h2>Lamborghini Huracan Twin-Turbo</h2>
+            <img src="https://www.boostlogic.com/wp-content/uploads/2020/02/3M1A2726-scaled.jpg" 
+                 alt="Lamborghini Huracan Twin-Turbo" 
+                 class="car-image huracan-border">
+            <div class="car-specs">
+                <p><strong>Performance:</strong> 5.2L V10 + Twin Turbos (1000+hp) | 0-60mph under 2.5s</p>
+                <p><strong>Unique Fact:</strong> The aftermarket twin-turbo setup increases power by 40% while maintaining the iconic V10 scream.</p>
+                <p><strong>Engineering:</strong> Uses aerospace-grade titanium in its exhaust system for weight savings.</p>
+            </div>
+        </div>
+        
+        <!-- Bugatti Tourbillon -->
+        <div class="car-card">
+            <h2>Bugatti Tourbillon</h2>
+            <img src="https://bugatti.imgix.net/67475f22a32ff125e1a83414/tourbillon-modelpage-studio-25_crop2.jpg" 
+                 alt="Bugatti Tourbillon" 
+                 class="car-image bugatti-border">
+            <div class="car-specs">
+                <p><strong>Performance:</strong> 8.3L W16 + Hybrid (1800hp) | Top speed 277mph</p>
+                <p><strong>Unique Fact:</strong> The dashboard features actual Swiss watchmaking components from Parmigiani Fleurier.</p>
+                <p><strong>Innovation:</strong> First hypercar with 3D-printed titanium brake calipers weighing just 2.9kg each.</p>
+            </div>
         </div>
     </div>
 </body>
